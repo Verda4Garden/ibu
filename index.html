@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD Ibu Tercinta</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Audio (Hidden) -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+
+        <div class="envelope-wrapper" id="envelopeWrapper">
+            <!-- The Envelope -->
+            <div class="envelope" id="envelope">
+                <div class="flap front-flap"></div>
+                <div class="flap bottom-flap"></div>
+                <div class="flap top-flap"></div>
+                <div class="pocket"></div>
+
+                <!-- The Letter/Card (Initial State) -->
+                <div class="letter-preview">
+                    <div class="wax-seal" id="openBtn">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="click-instruction">Klik segel hati untuk membuka</p>
+        </div>
+
+        <!-- The Full Card (Revealed after animation) -->
+        <div class="card-modal hidden" id="cardModal">
+            <div class="card-content">
+                <div class="border-decor"></div>
+
+                <div class="photo-area">
+                    <div class="photo-frame">
+                        <img src="ibu.jpg" alt="Foto Ibu" id="momPhoto">
+                    </div>
+                </div>
+
+                <div class="text-area">
+                    <h1 class="title">Selamat Ulang Tahun, Ibu</h1>
+                    <div class="divider">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="verse">
+                        Untuk wanita paling hebat di hidupku.<br>
+                        Terima kasih atas segala cinta dan doamu yang tak pernah putus.
+                    </p>
+                    <p class="message-body">
+                        Ibu, maaf ya kali ini aku cuma bisa kasih ini.
+                        Belum sempat beli kado mewah buat Ibu.
+                        Tapi aku janji, doa dan usahaku buat bahagiain Ibu gak akan pernah berhenti.
+                        Sehat selalu ya, Bu. Panjang umur dan bahagia terus.
+                    </p>
+                    <p class="sign">Anakmu yang sayang Ibu ❤️</p>
+                </div>
+
+                <button class="celebrate-btn" id="celebrateBtn">Kirim Cinta & Doa �</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
